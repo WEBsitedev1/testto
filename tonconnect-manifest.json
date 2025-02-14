@@ -1,7 +1,7 @@
 {
-  "url": "https://yourserver.com",
-  "name": "TON Wallet Bot",
-  "iconUrl": "https://yourserver.com/icon.png",
-  "termsOfUseUrl": "https://yourserver.com/terms",
-  "privacyPolicyUrl": "https://yourserver.com/privacy"
+  "url": "https://websitedev1.github.io/testto", // URL вашего приложения
+  "name": "askfkasf", // Название вашего бота
+  "iconUrl": "https://websitedev1.github.io/testto/icon.png", // Ссылка на иконку
+  "termsOfUseUrl": "https://websitedev1.github.io/testto/terms.html", // Ссылка на условия использования
+  "privacyPolicyUrl": "https://websitedev1.github.io/testto/privacy.html" // Ссылка на политику конфиденциальности
 }
