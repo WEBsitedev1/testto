@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON Connect</title>
+    <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect.bundle.min.js"></script>
+</head>
+<body>
+    <button id="connect">Подключить кошелек</button>
+
+    <script>
+        const connectButton = document.getElementById('connect');
+        
+        // Создание подключения с TON Connect
+        const tonConnect = new TonConnect({
+            manifestUrl: "https://websitedev1.github.io/testto/tonconnect-manifest.json",
+        });
+
+        connectButton.addEventListener('click', async () => {
+            try {
+                const response = await tonConnect.connect();
+                console.log("Connected to wallet:", response);
+                // Тут можно отправить данные в Telegram
+            } catch (error) {
+                console.error("Error connecting to wallet:", error);
+            }
+        });
+    </script>
+</body>
+</html>
